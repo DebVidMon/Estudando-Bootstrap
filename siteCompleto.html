@@ -15,14 +15,27 @@
             width: 50px;
             height: 50px;
         }
+        .bg-rosa1{
+            background-color: #B12831;
+        }
+        .bg-rosa2{
+            background-color: #ffb6bb;
+        }
+        .bg-rosa3{
+            background-color: #FFF1F2;
+        }
+        .txt-rosa{
+            color: #B12831;
+        }
+
     </style>
-    <title>Site Completo</title>
+    <title>Flores de Cerejeira</title>
   </head>
   <body>
 
     <!--NavBar-->
 
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-light bg-rosa1">
         <a class="navbar-brand" href="#"><img id="logo"src="assets/img/logo_flor.png" alt="logo ramo de cerejeira em flor"></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#conteudoNavbarSuportado" aria-controls="conteudoNavbarSuportado" aria-expanded="false" aria-label="Alterna navegação">
           <span class="navbar-toggler-icon"></span>
@@ -31,26 +44,26 @@
         <div class="collapse navbar-collapse" id="conteudoNavbarSuportado">
           <ul class="navbar-nav mr-auto">
             <li class="nav-item active">
-              <a class="nav-link" href="#">Home <span class="sr-only">(página atual)</span></a>
+              <a class="nav-link text-light"  href="#">Home <span class="sr-only">(página atual)</span></a>
             </li>
 
             <li class="nav-item">
-                <a class="nav-link" href="#cards">Cards</a>
+                <a class="nav-link text-light"  href="#cards">Cards</a>
               </li>
 
               <li class="nav-item">
-                <a class="nav-link" href="#hanami">Hanami</a>
+                <a class="nav-link text-light" href="#hanami">Hanami</a>
               </li>
 
               <li class="nav-item">
-                <a class="nav-link" href="#contato">Fale Conosco</a>
+                <a class="nav-link text-light" href="#contato">Fale Conosco</a>
               </li>
 
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <a class="nav-link dropdown-toggle text-light" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Mais Informações
               </a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <div class="dropdown-menu bg-rosa3" aria-labelledby="navbarDropdown">
                 <a class="dropdown-item" href="https://github.com/DebVidMon">Github</a>
                 <a class="dropdown-item" href="https://www.linkedin.com/in/d%C3%A9bora-videira-monteiro-90a5b347/">LinkedIn</a>
                 <div class="dropdown-divider"></div>
@@ -61,7 +74,7 @@
           </ul>
           <form class="form-inline my-2 my-lg-0">
             <input class="form-control mr-sm-2" type="search" placeholder="Pesquisar" aria-label="Pesquisar">
-            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Pesquisar</button>
+            <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Pesquisar</button>
           </form>
         </div>
       </nav>
@@ -84,85 +97,61 @@
         </div>
       </div>
       <!--JumboTron-->
-      <div class="jumbotron jumbotron-fluid">
+      <div class="jumbotron jumbotron-fluid bg-rosa3">
         <div class="container">
-          <h1 class="display-4">Pássaros e Cerejeiras</h1>
-          <p class="lead">Este é um site dedicado a exibir fotos de pássaros e cerejeiras em flor </p>
+          <h1 class="display-4 txt-rosa">Flores de Cerejeira</h1>
+          <p class="lead">Este é um site dedicado a apreciar as cerejeiras em flor </p>
         </div>
       </div>
       <!--CardColuns-->
       <div class="container">
           <div id="cards"class="card-columns">
               <div class="card">
-                  <img class="card-img-top" src=".../100px160/" alt="Imagem de capa do card">
+                  <img class="card-img-top" src="assets/img/card1.jpg" alt="Imagem de capa do card">
                   <div class="card-body">
-                      <h5 class="card-title">Título do card que quebra em uma nova linha</h5>
-                      <p class="card-text">Este é um card mais longo com suporte a texto embaixo, que funciona como uma introdução a um conteúdo adicional. Este conteúdo é um pouco maior.</p>
+                      <h5 class="card-title">Origem da "Apreciação das flores"</h5>
+                      <p class="card-text">Os registros remontam que o costume que originou o hanami já era comum na época Nara no Japão (Séc. VIII). Naqueles tempos, as flores de Umê, uma outra espécie de árvore asiática, eram os focos das observações culturais. Nos séculos seguintes, a flor da Sakura atraiu as atenções e originou o hanami, que se desenvolveu na celebração atual como é.</p>
                     </div>
-                </div>
-                <div class="card p-3">
-                    <blockquote class="blockquote mb-0 card-body">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-                        <footer class="blockquote-footer">
-                            <small class="text-muted">
-                                Alguém famoso em <cite title="Título da fonte">Título da fonte</cite>
-                            </small>
-                        </footer>
-                    </blockquote>
                 </div>
                 <div class="card">
-                    <img class="card-img-top" src=".../100px160/" alt="Imagem de capa do card">
-                    <div class="card-body">
-                        <h5 class="card-title">Título do card</h5>
-                        <p class="card-text">Este é um card com suporte a texto embaixo, que funciona como uma introdução a um conteúdo adicional.</p>
-                        <p class="card-text"><small class="text-muted">Atualizados 3 minutos atrás</small></p>
-                    </div>
+                    <img class="card-img" src="assets/img/card5.jpg" alt="Imagem do card"> 
                 </div>
-                <div class="card bg-primary text-white text-center p-3">
+                <div class="card">
+                    <img class="card-img-top" src="assets/img/card3.jpg" alt="Imagem de capa do card">
+                </div>
+                <div class="card bg-rosa2 text-white text-center p-5">
                     <blockquote class="blockquote mb-0">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat.</p>
-                        <footer class="blockquote-footer">
+                        <p>de tantos instantes<br>
+                            para mim lembrança<br>
+                            as flores de cerejeira.</p>
                             <small>
-                                Alguém famoso em <cite title="Título da fonte">Título da fonte</cite>
+                                <cite title="Título da fonte">Matsuo Basho</cite>
                             </small>
                         </footer>
                     </blockquote>
         </div>
-        <div class="card text-center">
-          <div class="card-body">
-              <h5 class="card-title">Título do card</h5>
-            <p class="card-text">Este é um card com suporte a texto embaixo, que funciona como uma introdução a um conteúdo adicional.</p>
-            <p class="card-text"><small class="text-muted">Atualizados 3 minutos atrás</small></p>
-        </div>
+        <div class="card">
+            <img class="card-img" src="assets/img/card4.jpg" alt="Imagem do card">
         </div>
         <div class="card">
-            <img class="card-img" src=".../100px260/" alt="Imagem do card">
-        </div>
-        <div class="card p-3 text-right">
-            <blockquote class="blockquote mb-0">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-                <footer class="blockquote-footer">
-                    <small class="text-muted">
-                        Alguém famoso em <cite title="Título da fonte">Título da fonte</cite>
-                    </small>
-                </footer>
-            </blockquote>
+            <img class="card-img" src="assets/img/card2.jpg" alt="Imagem do card">
         </div>
         <div class="card">
-            <div class="card-body">
-            <h5 class="card-title">Título do card</h5>
-            <p class="card-text">Este é um card maior com suporte a texto embaixo, que funciona como uma introdução a um conteúdo adicional. Este card tem o conteúdo ainda maior que o primeiro, para mostrar a altura igual, em ação.</p>
-            <p class="card-text"><small class="text-muted">Atualizados 3 minutos atrás</small></p>
+            <img class="card-img" src="assets/img/card6.jpg" alt="Imagem do card">
         </div>
     </div>
 </div>
 <!--Texto e VIdeo-->
+<div class="container">
 <div class="row mt-5 mb-5">
-    <div class="col-md-6">
-        <h3 id="hanami">Hanami</h3>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odio ullam nulla, totam quae natus ratione numquam commodi dolorem quod quibusdam quidem culpa fugiat accusamus. Facere nisi sint quibusdam ratione dolore?l</p>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta dolore tempore voluptas, odit quod maiores, accusamus consequatur laboriosam modi repudiandae harum asperiores voluptatibus. Alias quod modi nemo eaque autem quia.
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga sunt consequuntur commodi officiis aut repudiandae veritatis unde dignissimos. Earum error non necessitatibus perferendis voluptatum vel quia reiciendis amet veritatis facilis.</p>
+    <div class="col-md-6 text-justify">
+        <h3 id="hanami" class="txt-rosa">Hanami Matsuri</h3>
+        <p>Hanami, ou festival das cerejeiras, é uma festa tradicional japonesa que celebra o florescimento
+            das cerejeiras e a chegada da primavera, que acontece no fim de Março no Japão.
+           É costume entre os japoneses fazerem piqueniques à sombra dessas árvores e usarem as sakuras - flores 
+           das cerejeiras- nas receitas e na decoração de pratos.</p>
+           <p>Em São Paulo, no Parque do Carmo, a comunidade japonesa da cidade realiza no mês de Agosto uma 
+           versão brasileira da festa, onde são vendidas comidas típicas. Há ainda apresentações de música e dança tradicionais. Vale a pena conferir.</p>
         </div>
         <div class="col-md-6">
             <iframe width="560" height="315" src="https://www.youtube.com/embed/u4apHpojJ7Y" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -172,7 +161,7 @@
     <!--Formulário-->
     <div class="row">
         <div class="col-md-12 mb-3">
-            <h4 id ="contato" class="text-center">Entre em contato conosco</h4>
+            <h2 id ="contato" class="text-center txt-rosa">Entre em contato conosco</h2>
         </div>
     </div>
     <div class="row">
@@ -197,19 +186,19 @@
                     <div id=texto></div>
                 </div>
     
-                <button type="submit" class="btn btn-primary" onclick="enviar()">Enviar</button>
+                <button type="submit" class="btn bg-rosa1 text-light mb-3" onclick="enviar()"><b>Enviar</b></button>
             </form>
         </div>
         <div class="col-md-6">
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14627.63512114952!2d-46.47748814924767!3d-23.57171944539214!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce66f7ff08b47d%3A0xc9338bd114602a0f!2sParque%20do%20Carmo%20%E2%80%93%20Olavo%20Egydio%20Set%C3%BAbal!5e0!3m2!1spt-BR!2sbr!4v1615570441036!5m2!1spt-BR!2sbr" width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
         </div>
     </div>
-    
-    
+</div>
+</div>
     
     <!--Footer-->
     
-    <footer>
+    <footer class="bg-rosa3 p-2">
         <div class="row mb-3">
             <div class="col md-12 d-flex justify-content-center">
                 <div>
@@ -231,7 +220,6 @@
             </p>
         </div>
     </footer>
-</div>
     
     
     <!-- JavaScript (Opcional) -->
