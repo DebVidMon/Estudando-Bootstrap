@@ -170,20 +170,20 @@
                 <div class="form-group">
                     <label for="exampleInputName">Nome Completo</label>
                     <input class="form-control" id="exampleInputName" placeholder="Seu nome" onkeyup="validaNome()">
-                    <div id=nome></div>
+                    <div id=validanome> </div>
                 </div>
 
                 <div class="form-group">
-                <label for="exampleInputEmail1">Endereço de email</label>
+                <label for="exampleInputEmail">Endereço de email</label>
                 <input type="email" class="form-control" id="exampleInputEmail" aria-describedby="emailHelp" placeholder="Seu email" onkeyup="validaEmail()">
                 <small id="emailHelp" class="form-text text-muted">Nunca vamos compartilhar seu email, com ninguém.</small>
-                <div id=email></div>
+                <div id=validaemail> </div>
                 </div>
 
                 <div class="form-group">
-                    <label for="exampleFormControlTextarea1">Escreva aqui o seu recado</label>
-                    <textarea class="form-control" id="exampleFormControlTextarea" rows="3" onkeyup=" validaAssunto()"></textarea>
-                    <div id=texto></div>
+                    <label for="exampleFormControlTextarea">Escreva aqui o seu recado</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea" rows="3" onkeyup="validaAssunto()"></textarea>
+                    <div id=validatexto> </div>
                 </div>
     
                 <button type="submit" class="btn bg-rosa1 text-light mb-3" onclick="enviar()"><b>Enviar</b></button>
@@ -224,15 +224,15 @@
     
     <!-- JavaScript (Opcional) -->
     <script>
-        let nome = document.querySelector("#exempleInputName")
-        let email = document.querySelector ("#exempleInputEmail")
+        let nome = document.querySelector("#exampleInputName")
+        let email = document.querySelector ("#exampleInputEmail")
         let assunto = document.querySelector("#exampleFormControlTextarea")
         let nomeOK = false
         let emailOk = false
         let assuntoOk = false
 
         function validaNome(){
-            let txt = document.querySelector("#nome")
+            let txt = document.querySelector("#validanome")
             if(nome.value.length < 3){
                 txt.innerHTML ="Nome Inválido"
                 txt.style.color = "red"
@@ -245,7 +245,7 @@
         }
 
         function validaEmail(){
-            let txt = document.querySelector("#email")
+            let txt = document.querySelector("#validaemail")
             if(email.value.indexOf("@") == -1 || email.value.indexOf(".") == -1  ){
                 txt.innerHTML ="Email Inválido"
                 txt.style.color = "red"
@@ -257,7 +257,7 @@
         }
 
         function validaAssunto(){
-            let txt = document.querySelector("#texto")
+            let txt = document.querySelector("#validatexto")
             if(assunto.value.length > 100 ){
                 txt.innerHTML ="Texto muito longo (máximo 100 caracteres) "
                 txt.style.color = "red"
